@@ -19,21 +19,20 @@ class Employee {
 protected:
 	string name;
 	int ID_num;
-	double pay_rate, health_con, vacation_days;
+	double pay_rate, health_con, vacation;
 
 public:
 	Employee(); //default constructor
-	Employee(string user_name, int user_ID, double user_pay, double user_health, double user_vacation); //constructor with user inputs
-	void set_name(string user_name); //setters and getters
-	void set_ID(int user_ID);
-	void set_pay(double user_pay);
-	void set_hc(double user_hc);
-	void set_vd(double user_vd);
-	string get_name();
-	int get_ID();
-	double get_pay();
-	double get_hc();
-	double get_vd();
+	Employee(string user_name, int user_ID); //constructor with user inputs
+
+	void set_name(string user_name) { name = user_name; }; //setters and getters
+	void set_ID(int user_ID) { ID_num = user_ID; };
+	string get_name() { return name; };
+	int get_ID() { return ID_num; };
+
+	virtual double calc_weekly_salary(double hours_worked) const = 0;
+	virtual double calc_health_care(double hours_worked) const = 0;
+	virtual double calc_vacation_days(double hours_worked) const = 0;
 
 };
 
