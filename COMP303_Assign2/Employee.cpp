@@ -21,23 +21,23 @@ Employee::Employee(string user_name, int user_ID, double user_pay, double user_h
 }
 
 void Employee::set_name(string user_name) {
-	cout << "";
+	name = user_name;
 }
 
 void Employee::set_ID(int user_ID) {
-	cout << "";
+	ID_num = user_ID;
 }
 
 void Employee::set_pay(double user_pay) {
-	cout << "";
+	pay_rate = user_pay;
 }
 
 void Employee::set_hc(double user_hc) {
-	cout << "";
+	health_con = user_hc;
 }
 
 void set_vd(double user_vd) {
-	cout << "";
+	vacation_days = user_vd;
 }
 
 string Employee::get_name() {
