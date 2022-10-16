@@ -12,7 +12,7 @@ using namespace std;
 	nonprofessional;
 	weekly/hourly salary, vacation hours based on worked hours
 
-	healthcare contribution - RULE: set at 7% of weekly salary
+	healthcare contribution - RULE: set at 5% of weekly salary
 	vacation - for every 50 hours worked, 1 hour of vacation time is accrued
 */
 

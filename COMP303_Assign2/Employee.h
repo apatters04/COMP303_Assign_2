@@ -10,7 +10,7 @@ using namespace std;
 
 /*
 	common to all employees;
-	name, ID num, health care contribution, vacation days
+	name, ID num
 	functions:
 	calc weekly salary, hc contributions, vacation days
 */
@@ -30,7 +30,7 @@ public:
 	string get_name() { return name; };
 	int get_ID() { return ID_num; };
 
-	virtual double calc_weekly_salary(double hours_worked) const = 0;
+	virtual double calc_weekly_salary(double hours_worked) const = 0; //virtual functions to share to derived classes
 	virtual double calc_health_care(double hours_worked) const = 0;
 	virtual double calc_vacation_days(double hours_worked) const = 0;
 

@@ -32,10 +32,10 @@ double Professional::calc_health_care(double hours_worked) const {
 double Professional::calc_vacation_days(double hours_worked) const {
 	double vacay_days = vacation;
 
-	if (pay_rate > 5000) {  //checking the monthly salary of employee to determine vacation days
+	if (pay_rate > 6500) {  //checking the monthly salary of employee to determine vacation days
 		vacay_days = 56;
 	}
-	else if (pay_rate == 5000) {
+	else if (pay_rate == 6500) {
 		vacay_days = 42;
 	}
 	else {
