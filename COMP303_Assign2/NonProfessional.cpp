@@ -24,7 +24,7 @@ double NonProfessional::calc_health_care(double hours_worked) const {
 	double pay_day = calc_weekly_salary(hours_worked); //calc weekly salary
 	double health_care_contributions;
 
-	health_care_contributions = pay_day * health_con; //multiply weekly salary by health care contribution to find weekly contribution
+	health_care_contributions = pay_day * 0.05; //multiply weekly salary by health care contribution (set at 5%) to find weekly contribution
 
 	return health_care_contributions;
 }

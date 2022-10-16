@@ -28,7 +28,7 @@ public:
 	NonProfessional(string user_name, int user_ID, double user_pay, double user_vacation) : Employee(user_name, user_ID) {
 		pay_rate = user_pay;
 		vacation = user_vacation;
-	} //default constructor building off of base class Employee name/ID num
+	} //default constructor building off of base class Employee name/ID num - health care contrib. is set so no need to enter that data in, enter existing vacation time to add to accrued
 
 	void set_pay(double user_pay) { pay_rate = user_pay; }; //setters
 	void set_hc(double user_hc) { health_con = user_hc; };
@@ -38,7 +38,7 @@ public:
 	double get_hc() { return health_con; };
 	double get_vd() { return vacation; };
 
-	double calc_weekly_salary(double hours_worked) const; //virutal functions from base class modified to suit needs
+	double calc_weekly_salary(double hours_worked) const; //functions from base class modified to suit needs
 	double calc_health_care(double hours_worked) const;
 	double calc_vacation_days(double hours_worked) const;
 

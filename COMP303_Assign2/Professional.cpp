@@ -15,7 +15,7 @@ Professional::Professional() { //default constructor, no args implementation
 double Professional::calc_weekly_salary(double hours_worked) const {
 	double pay_day;
 
-	pay_day = pay_rate / hours_worked; //divide monthy pay by # of hours worked in a week
+	pay_day = pay_rate / 4; //divide monthy pay by 4 weeks
 
 	return pay_day;
 }
