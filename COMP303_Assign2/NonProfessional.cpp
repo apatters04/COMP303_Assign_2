@@ -4,7 +4,7 @@
 
 using namespace std;
 
-NonProfessional::NonProfessional() {
+NonProfessional::NonProfessional() { //default constructor, no args implementation
 	name = "NONE";
 	ID_num = 0000;
 	pay_rate = 0.0;
@@ -15,23 +15,23 @@ NonProfessional::NonProfessional() {
 double NonProfessional::calc_weekly_salary(double hours_worked) const {
 	double pay_day;
 
-	pay_day = pay_rate * hours_worked;
+	pay_day = pay_rate * hours_worked; //multiplying hourly rate by hours worked to find weekly salary
 
 	return pay_day;
 }
 
 double NonProfessional::calc_health_care(double hours_worked) const {
-	double pay_day = calc_weekly_salary(hours_worked);
+	double pay_day = calc_weekly_salary(hours_worked); //calc weekly salary
 	double health_care_contributions;
 
-	health_care_contributions = pay_day * health_con;
+	health_care_contributions = pay_day * health_con; //multiply weekly salary by health care contribution to find weekly contribution
 
 	return health_care_contributions;
 }
 
 
-double NonProfessional::calc_vacation_days(double hours_worked)const {
+double NonProfessional::calc_vacation_days(double hours_worked) const {
 	double vacay;
-	vacay = (hours_worked / 10) + vacation;
+	vacay = (hours_worked / 50) + vacation; //RULE: 1 vacation day is accrued per 50 hours worked, add to existing vacation time
 	return vacay;
 }
